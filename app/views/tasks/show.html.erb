@@ -1,2 +1,12 @@
+<div class="center">
 <h1>Tasks#show</h1>
-<p>Find me in app/views/tasks/show.html.erb</p>
+<h2>Name: <%= @task.name %></h2>
+<p>Description: <%= @task.description %></p>
+<p><% if @task.done %>
+  <p>Done!</p>
+<% else %>
+  <p>Not Done!</p>
+<% end%>
+<p><%= link_to 'Edit Task', edit_task_path %></p>
+<p><%= link_to 'Show all tasks', tasks_path %></p>
+ </div>
