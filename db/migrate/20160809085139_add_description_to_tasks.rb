@@ -3,3 +3,4 @@ class AddDescriptionToTasks < ActiveRecord::Migration[5.0]
     add_column :tasks, :description, :string
   end
 end
+
